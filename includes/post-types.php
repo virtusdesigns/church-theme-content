@@ -27,24 +27,24 @@ function ctc_register_post_type_sermon() {
 	// Arguments
 	$args = array(
 		'labels' => array(
-			'name'					=> _x( 'Sermons', 'post type general name', 'church-theme-content' ),
-			'singular_name'			=> _x( 'Sermon', 'post type singular name', 'church-theme-content' ),
-			'add_new' 				=> _x( 'Add New', 'sermon', 'church-theme-content' ),
-			'add_new_item' 			=> __( 'Add Sermon', 'church-theme-content' ),
-			'edit_item' 			=> __( 'Edit Sermon', 'church-theme-content' ),
-			'new_item' 				=> __( 'New Sermon', 'church-theme-content' ),
-			'all_items' 			=> __( 'All Sermons', 'church-theme-content' ),
-			'view_item' 			=> __( 'View Sermon', 'church-theme-content' ),
-			'search_items' 			=> __( 'Search Sermons', 'church-theme-content' ),
-			'not_found' 			=> __( 'No sermons found', 'church-theme-content' ),
-			'not_found_in_trash' 	=> __( 'No sermons found in Trash', 'church-theme-content' )
+			'name'					=> _x( 'Teachings', 'post type general name', 'church-theme-content' ),
+			'singular_name'			=> _x( 'Teaching', 'post type singular name', 'church-theme-content' ),
+			'add_new' 				=> _x( 'Add New', 'teaching', 'church-theme-content' ),
+			'add_new_item' 			=> __( 'Add Teaching', 'church-theme-content' ),
+			'edit_item' 			=> __( 'Edit Teaching', 'church-theme-content' ),
+			'new_item' 				=> __( 'New Teaching', 'church-theme-content' ),
+			'all_items' 			=> __( 'All Teachings', 'church-theme-content' ),
+			'view_item' 			=> __( 'View Teaching', 'church-theme-content' ),
+			'search_items' 			=> __( 'Search Teachings', 'church-theme-content' ),
+			'not_found' 			=> __( 'No teachings found', 'church-theme-content' ),
+			'not_found_in_trash' 	=> __( 'No teachings found in Trash', 'church-theme-content' )
 		),
-		'public' 		=> ctc_feature_supported( 'sermons' ),
-		'has_archive' 	=> ctc_feature_supported( 'sermons' ),
+		'public' 		=> ctc_feature_supported( 'teachings' ),
+		'has_archive' 	=> ctc_feature_supported( 'teachings' ),
 		'rewrite'		=> array(
-			'slug' 			=> 'sermons',
+			'slug' 			=> 'teachings',
 			'with_front' 	=> false,
-			'feeds'			=> ctc_feature_supported( 'sermons' )
+			'feeds'			=> ctc_feature_supported( 'teachings' )
 		),
 		'supports' 		=> array( 'title', 'editor', 'excerpt', 'publicize', 'thumbnail', 'comments', 'author', 'revisions' ), // 'editor' required for media upload button (see Meta Boxes note below about hiding)
 		'taxonomies' 	=> array( 'ctc_sermon_topic', 'ctc_sermon_book', 'ctc_sermon_series', 'ctc_sermon_speaker', 'ctc_sermon_tag' ),
